@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+        
+        <title>University Website Design</title>
+        
+        <link rel="stylesheet" href="style.css"></link>
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com"> 
+        <link href="https://fonts.googleapis.com/css2?family=Moirai+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">   
+    </head>
+    <body>
+        <section class="sub-header">
+            <nav>
+                <a href="index.html"><h1>NANDINI .</h1></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <h1>About US</h1>
+        </section>
+        
+  <!---about us--------------------->          
+         
+        <section class="about-us">
+            <div class="row">
+                <div class="about-col">
+                    <h1>We are one of the World's Largest University</h1>
+                    <p>Welcome to Sardar VallabhBhai National Institute of Technology</p>
+                    <a href="courses.html" class="hero-btn red-btn">Explore Now</a>
+                </div>
+                <div class="about-col">
+                    <img src="https://drive.google.com/uc?export=download&id=188OX6mgJbaUyj0bKF6r5-B8lnREceGjW">
+                </div>
+            </div>
+        </section>     
+             
+  <!---footer----------------------->
+  
+        <section class="footer">
+            <h4>About Us</h4>
+            <p>We are a World Class Institute Shaping Young Minds.</p>
+            <div class="icons">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-linkedin"></i>
+                
+            </div>
+            <p>Made by <i class="fa fa-heart-o"></i> Nandini</p>
+        </section>
+ 
+ 
+  <!--Javascript for Toggle Menu --->  
+        <script>
+            var navLinks = document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+        </script>
+    </body>
+</html>
+
